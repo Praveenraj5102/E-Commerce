@@ -1,0 +1,60 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Margarine&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+:root{
+    --ff-primary:"Roboto",sans-serif;
+    --ff-secoundry:"Inter",sans-serif;
+    --ff-design:"Satisfy",sans-serif;
+    --ff-brand:"Margarine",sans-serif;
+
+    --clr-white:#fff;
+    --clr-dark:#333;
+    --clr-gray-1:#102a42;
+    --clr-gray-2:#617d98;
+    --clr-gray-3:#f1f5f8;
+    --clr-primary:#f53b57;
+    --clr-primary-light:#f04660;
+    --clr-secoundary:#e9b949;
+
+    --transition: all 0.3s linear ;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+h1,h2,h3,h4{
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    line-height: 1.25;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+    font-family: var(--ff-primary);
+}
+h3{
+    font-size: 1.5rem;
+    font-family: var(--ff-secoundry);
+}
+h4{
+    font-size: .875rem;
+    font-family: var(--ff-secoundry);
+
+}
+*{
+
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::after,
+.clearfix::before{
+    content:'';
+    clear: both;
+    display: table;
+}
+html{
+    scroll-behavior: smooth;
+} */

@@ -1,0 +1,22 @@
+.footer{
+    background-color: #222;
+    text-align: center;
+    
+}
+.social-icons .icon i{
+    font-size: 32px;
+    margin-right: 1rem;
+}
+.footer-text{
+    color: white;
+    margin-top: 1.25rem;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.company{
+    color: var(--clr-primary);
+}
+.company:hover{
+    padding: 0px 10px;
+}
