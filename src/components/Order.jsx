@@ -17,7 +17,7 @@ const Order = () => {
     const handleInputChange = (event) => {
         setQuery(event.target.value)
     }
-    const filteredItems = products.filter((product) => product.title.toLowerCase().indexOf(query.toLowerCase() !== -1))
+    const filteredItems = products.filter((product) => product.title.toLowerCase().includes(query.toLowerCase()))
 
     //-------------------Radio Filter------------------
     const handleChange = (event) => {
