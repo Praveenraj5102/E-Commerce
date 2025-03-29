@@ -1,0 +1,13 @@
+.ml{
+    margin-top: 50px;
+    /* margin-left: 25px; */
+}
+.price.title{
+    margin-top: 20px;
+}
+.sidebar-label-container{
+    
+    display: flex;
+    justify-content: center;
+    
+}

@@ -1,6 +1,6 @@
 import React from 'react'
-import "./Products.css"
-const Products = () => {
+import "./OurProducts.css"
+const OurProducts = () => {
   return (
     <section className='products' id='Products'>
         <div className='section-center clearfix'>
@@ -36,4 +36,4 @@ const Products = () => {
   )
 }
 
-export default Products
+export default OurProducts

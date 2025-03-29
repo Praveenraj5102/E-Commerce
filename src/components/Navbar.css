@@ -9,7 +9,7 @@
     padding: 10px;
     
 }
-.nav-container{
+.navbar-container{
     /* position:fixed; */
 
      margin-inline: auto;
@@ -24,7 +24,7 @@
      /* position: relative; */
 }
 
-.nav-container ul{
+.navbar-container ul{
     display: flex;
     
     gap: 60px;
@@ -36,7 +36,7 @@
 }
 
 
-.nav-container ul a{
+.navbar-container ul a{
     cursor: pointer;
     color:white;
     text-decoration: none;
@@ -46,22 +46,22 @@
     text-align: center;
     
 }
-.nav-container ul li{
+.navbar-container ul li{
     padding-bottom: 10px;
     list-style-type: none;
     transform: all .3s linear;
 }
-.nav-container ul li:hover{
+.navbar-container ul li:hover{
     border-bottom: 2px solid white;
    
 
 }
-.nav-container ul li a:hover{
+.navbar-container ul li a:hover{
     color: orange;
     padding: 15px;
     
 }
-.nav-container button{
+.navbar-container button{
    
     padding: 8px 32px;
     border-radius: 30px;
