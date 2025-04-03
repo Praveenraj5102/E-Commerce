@@ -1,0 +1,136 @@
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart-container{
+    display: flex;
+    
+    padding: 10px;
+    width:300px;
+    gap: 30px;
+    margin-left: 50px;
+   
+    
+}
+.cart-product{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    height: 400px;
+    width: 230px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    transition: all .6s ease;
+}
+.cart-product:hover{
+    transform: translateY(-5px);
+}
+.cart-product .img{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cart-product .img img{
+    width: 100%;
+    height: 100%;
+}
+.remove-btn{
+    width: 120px;
+    height:25px;
+    background-color: #c83514;
+    color: white;
+
+}
+.cart-heading{
+    text-align: center;
+    margin: 20px 0;
+}
+.cart-amt,.cart-total-item{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.checkout{
+    width: 150px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+    background:#44bd32 ;
+}
+
+
+/* CSS */
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+
+
+
+/* CSS */
+.button-62 {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  margin-top: 30px;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+.quantity{
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+.pp{
+    margin-top: 10px ;
+    margin-bottom: -5px;
+}

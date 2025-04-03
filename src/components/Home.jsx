@@ -7,8 +7,14 @@ import OurProducts from "./OurProducts.jsx";
 import Services from "./Services.jsx";
 import Contact from "./Contact.jsx";
 import Footer from "./Footer.jsx";
-
+import { Link, useNavigate } from "react-router-dom";
 const Home = () => {
+
+  const navigate=useNavigate()
+  const click=()=>{
+navigate("/home/order")
+  }
+
   return (
     <div>
       <Navbar />
@@ -16,7 +22,7 @@ const Home = () => {
         <div className="banner">
           <h2>Discover the Secreat To Taset</h2>
           <h1>Food on Your Home</h1>
-          <a href="#" className="btn banner-btn">
+          <a href="#" className="btn banner-btn" onClick={click}>
             View More
           </a>
         </div>

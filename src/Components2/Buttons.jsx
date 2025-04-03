@@ -5,7 +5,7 @@ const Buttons = ({onclickHandler,value,titel}) => {
   return (
     
         <button onClick={onclickHandler} value={value} className="btns">
-          {titel}
+          {/* {titel} */}
         </button>
       
     

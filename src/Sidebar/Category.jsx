@@ -2,9 +2,7 @@
 import "./Category.css"
 import Input from '../Components2/Input'
 const Category = ({handleChange}) => {
-//   const handleChange = (event) => {
-//     setSelectCategory(event.target.value)
-// }
+
   return (
     <div >
       <h2 className='sidebar-title'>Category</h2>

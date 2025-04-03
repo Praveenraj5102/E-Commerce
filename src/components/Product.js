@@ -1,5 +1,5 @@
 import {AiFillStar} from "react-icons/ai"
-export const products = [
+export const datas = [
   {
     id: 1,
     img: "https://img.freepik.com/free-photo/delicious-indian-dosa-composition_23-2149086051.jpg?ga=GA1.1.1394031672.1742958393&semt=ais_hybrid",
@@ -491,3 +491,4 @@ export const products = [
     category: "Juice",
   },
 ];
+

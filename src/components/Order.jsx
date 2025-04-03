@@ -1,23 +1,40 @@
-import React, { useState } from 'react'
+
 import Nav from "../Navigation/Nav";
 import Products from "../Products/Products";
 import Recomended from "../Recomended/Recomended";
 import Sidebar from "../Sidebar/Sidebar";
+import { useState } from "react";
+import Card from "../Components2/Card.jsx";
 
 // Data
-import { products } from './Product.js';
-import Card from '../Components2/Card';
+import  {datas}  from './Product.js';
+
+
+
+
 
 const Order = () => {
+    
     const [selectCategory, setSelectCategory] = useState(null)
-    const [query, setQuery] = useState("")
+    const [search, setSearch] = useState("")
+    
+    
+    
+
+   
+    
+    
+
+  
+    
+
 
     //------------------Input filter------------------------
 
     const handleInputChange = (event) => {
-        setQuery(event.target.value)
+        setSearch(event.target.value)
     }
-    const filteredItems = products.filter((product) => product.title.toLowerCase().includes(query.toLowerCase()))
+    const filteredItems = datas.filter((product) => product.title.toLowerCase().includes(search.toLowerCase()))
 
     //-------------------Radio Filter------------------
     const handleChange = (event) => {
@@ -29,45 +46,63 @@ const Order = () => {
         setSelectCategory(event.target.value)
     }
 
-    function filteredData(products, selected, query) {
-        let filteredProducts = products
+
+    //--------------------- 
+
+
+
+
+    function filteredData(products, selected, search) {
+        let filteredProducts = datas
 
         // Filtering Input Items
-        if (query) {
+        if (search) {
             filteredProducts = filteredItems
         }
 
         //Selected Filter
         if (selected) {
             filteredProducts = filteredProducts.filter(
-                ({ category, maincategory, price, title, }) =>
+                ({ category, maincategory, price, title }) =>
                     category === selected ||
                     maincategory === selected ||
                     price === selected ||
                     title === selected
             )
         }
-        return filteredProducts.map(({ id, img, title, star, reviews, price }) =>
-        (<Card key={Math.random()}
-            img={img}
-            title={title}
-            star={star}
-            reviews={reviews}
-            price={price}
+
+        return filteredProducts.map((product) =>
+        (<Card product={product}
+             key={product.id}
+            // img={product.img}
+            // title={product.title}
+            // star={product.star}
+            // reviews={product.reviews}
+            // price={product.price}
         />
         )
         )
 
     }
-    const result = filteredData(products, selectCategory, query)
+    const result = filteredData(datas, selectCategory, search)
+
+
 
     return (
-        <div>
-            <Sidebar handleChange={handleChange} />
-            <Nav query={query} handleInputChange={handleInputChange} />
-            <Recomended handleClick={handleClick} />
-            <Products result={result} />
-        </div>
+        
+            
+                <div >
+                   
+    
+                <Sidebar handleChange={handleChange} />
+                <Nav search={search} handleInputChange={handleInputChange}  />
+                <Recomended handleClick={handleClick} />
+                <Products result={result}  />
+                
+            </div>
+            
+       
+
     )
 }
 

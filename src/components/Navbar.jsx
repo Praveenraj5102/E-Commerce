@@ -20,7 +20,7 @@ navigate("/home/order")
                <li> <a href="#Products" >Products</a></li> 
                <li> <a href="#Services" >Services</a></li> 
                <li> <a href="#Contact" >Contact</a></li> 
-               <li><a onClick={click}>Order</a> </li>
+               <li><a  onClick={click}>Order</a> </li>
             </ul>
             
            
